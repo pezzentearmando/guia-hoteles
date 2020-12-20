@@ -1,0 +1,19 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "primer proyecto nodejs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pezzentearmando/guia-hoteles.git"
+  },
+  "author": "Armando Pezzente",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pezzentearmando/guia-hoteles/issues"
+  },
+  "homepage": "https://github.com/pezzentearmando/guia-hoteles#readme"
+}
