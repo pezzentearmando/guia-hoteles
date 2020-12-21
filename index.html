@@ -1,21 +1,139 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+        <title>Hoteles</title>
+    </head>
+    <body>
+        <!-- Encabezado -->
+        <div class="jumbotron">
+            <h1>GUÍA DE HOTELES</h1>
+        </div>
 
-    <!-- JS: JQuery then Popper then Bootstrap -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  </body>
+        <!--Container-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>
+                        <h3>Como funciona</h3>
+                        <p>Busca hoteles segun tu preferencia</p>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <p>
+                        <h3>Donde puedo reservar</h3>
+                        <p>Elegí tu ciudad favorita</p>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <p>
+                        <h3>Como pago</h3>
+                        <p>Utilizá tu tarjeta favorita</p>
+                    </p>
+                </div>
+            </div><!-- end row -->
+            <hr>
+            <!--Listado de Hoteles-->
+            <div class="d-flex flex-wrap flex-row-reverse">
+                <div class="card-hotel d-flex flex-column justify-content-between">
+                    <div>
+                        <h4>Hotel Barcelona</h4>
+                        <p>En el centro a pocos metros de la playa</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-reserva">Reservar</button>
+                    </div>
+                </div>
+                <div class="card-hotel d-flex flex-column justify-content-between">
+                    <div>
+                        <h4>Hotel Buenos Aires</h4>
+                        <p>En el centro a pocos metros de la playa</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-reserva">Reservar</button>
+                    </div>
+                </div>
+                <div class="card-hotel d-flex flex-column justify-content-between">
+                    <div>
+                        <h4>Hotel Madrid</h4>
+                        <p>En el centro a pocos metros de la playa</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-reserva">Reservar</button>
+                    </div>
+                </div>
+                <div class="card-hotel d-flex flex-column justify-content-between">
+                    <div>
+                        <h4>Hotel Rio</h4>
+                        <p>En el centro a pocos metros de la playa</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-reserva">Reservar</button>
+                    </div>
+                </div>
+                <div class="card-hotel d-flex flex-column justify-content-between">
+                    <div>
+                        <h4>Hotel Lima</h4>
+                        <p>En el centro a pocos metros de la playa</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-reserva">Reservar</button>
+                    </div>
+                </div>
+                <div class="card-hotel d-flex flex-column justify-content-between">
+                    <div>
+                        <h4>Hotel San Pablo</h4>
+                        <p>En el centro a pocos metros de la playa</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-reserva">Reservar</button>
+                    </div>
+                </div>
+            </div><!-- end row -->
+        </div><!--end container-->
+
+        <hr>
+
+        <footer class="footer">
+            <div class="row">
+                <!-- Redes Sociales -->
+                <div class="col-sm-4 d-flex flex-column align-items-start">
+                    <a href="htpp://www.facebook.com">Facebook</a>
+                    <a href="htpp://www.twitter.com">Twitter</a>
+                    <a href="htpp://www.instagram.com">Instagram</a>
+                    <a href="htpp://www.google.com">Google</a>
+                </div>
+
+                <!-- Datos de contacto de la empresa -->
+                <div class="col-sm-4 justify-content-center">
+                    <address>
+                        <h3>Oficina Central</h3>
+                        <p>Tucuman 2587, Mar del Plata, Argentina</p>
+                        <p>+5492235654321</p>
+                        <p>contacto@guiahoteles.com</p>
+                    </address>
+                </div>
+
+                <!-- Atajo a direcciones del sitio -->
+                <div class="col-sm-4 d-flex flex-column align-items-end">
+                    <a href="htpp://www.facebook.com">Nosotros</a>
+                    <a href="htpp://www.twitter.com">Precios</a>
+                    <a href="htpp://www.instagram.com">Términos y condiciones</a>
+                    <a href="htpp://www.google.com">Contacto</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JS: JQuery then Popper then Bootstrap -->
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/popper.js/dist/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
 </html>
