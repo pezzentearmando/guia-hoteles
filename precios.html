@@ -175,18 +175,55 @@
                 </div><!--fin tab compara precios-->
 
                 <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
-                    <!--Tabla de tarjetas aceptadas-->
-                    <div class="d-flex justify-content-center">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-header" style="background-color: blue; color: white;">
-                                Tarjetas Aceptadas
+                    <div class="accordion" id="accordionTarjetas">
+                        
+                        <div class="card"><!--Card Tarjeta Basica-->
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBasica" aria-expanded="true" aria-controls="collapseBasica">
+                                        Tarjeta Básica
+                                    </button>
+                                </h5>
                             </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Tarjeta básica</li>
-                                <li class="list-group-item">Tarjeta VIP</li>
-                                <li class="list-group-item">Tarjeta Black</li>
-                            </ul>
-                        </div>
+                            <div id="collapseBasica" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTarjetas">
+                                <div class="card-body">
+                                    Puedes reservar en 3 coutas sin interés
+                                </div>
+                            </div>
+                        </div><!--fin card Tarjeta Basica-->
+                        
+                        <div class="card"><!--Card Tarjeta VIP-->
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseVIP" aria-expanded="false" aria-controls="collapseVIP">
+                                        Tarjeta VIP
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseVIP" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTarjetas">
+                                <div class="card-body">
+                                    Puedes reservar en 6 coutas sin interés.
+                                    Al llegar recibirás una canasta de obsequios para tu familia.
+                                </div>
+                            </div>
+                        </div><!--fin card Tarjeta VIP-->
+
+                        <div class="card"><!--Card Tarjeta BLACK-->
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseBlack" aria-expanded="false" aria-controls="collapseBlack">
+                                        Tarjeta Black
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseBlack" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTarjetas">
+                                <div class="card-body">
+                                    Puedes reservar en 12 coutas sin interés.
+                                    Al llegar recibirás una canasta de obsequios para tu familia. 
+                                    Tendrán acceso al gimnasio y spa durante todos los días de tus vacaciones.
+                                </div>
+                            </div>
+                        </div><!--fin card Tarjeta VIP-->
                     </div>
                 </div><!--fin tab tarjetas-->
 
