@@ -101,7 +101,7 @@
                 <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
                     <img src="./imagenes/hotel.jpeg" class="card-img-top" alt="Responsive image">
                     <div class="card-body">
-                        <h5 class="card-title">Hotel Buenos Aires</h5>
+                        <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas del mes tienen clases de tango gratis!">Hotel Buenos Aires</h5>
                         <h6 class="card-subtitle text-muted">Argentina</h6>
                         <p class="card-text">En el centro a pocos metros de la playa</p>
                     </div>
@@ -224,7 +224,14 @@
 
         <!-- JS: JQuery then Popper then Bootstrap -->
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="node_modules/popper.js/dist/popper.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script>
+            $(function(){
+                $("[data-toggle='tooltip']").tooltip();
+            });
+        </script>
+
     </body>
 </html>
